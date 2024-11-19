@@ -9,22 +9,22 @@ def escolha_tipo():
         print('IMB - Tora de Imbuia')
         escolha = input('>> ')
 
-        if escolha != 'PIN' and escolha != 'PER' and escolha != 'MOG' and escolha != 'IPE' and escolha != 'IMB':
+        if escolha.lower() != 'pin' and escolha.lower() != 'per' and escolha.lower() != 'mog' and escolha.lower() != 'ipe' and escolha.lower() != 'imb':
             print('Escolha inválida. Tente novamente.\n')
             continue
 
         break
 
     # Retorna o preço da madeira escolhida
-    if escolha == 'PIN':
+    if escolha.lower() == 'pin':
         return 150.44
-    elif escolha == 'PER':
+    elif escolha.lower() == 'per':
         return 170.20
-    elif escolha == 'MOG':
+    elif escolha.lower() == 'mog':
         return 190.90
-    elif escolha == 'IPE':
+    elif escolha.lower() == 'ipe':
         return 210.10
-    elif escolha == 'IMB':
+    elif escolha.lower() == 'imb':
         return 220.70
 
 
